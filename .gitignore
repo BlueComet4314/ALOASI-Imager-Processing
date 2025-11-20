@@ -1,0 +1,77 @@
+###############################
+# MATLAB + Python Gitignore
+###############################
+
+# --- MATLAB Specific ---
+*.asv              # Autosave files
+*.mex*             # Compiled mex binaries
+*.mltbx            # MATLAB toolbox files
+*.mat              # Large binary workspace files (optional)
+*.fig              # MATLAB figure files (optional)
+*.slxc             # Simulink cache
+*.slx              # Simulink models (optional)
+*.mdl              # Simulink models (legacy)
+*.autosave
+
+# MATLAB crash logs
+matlab_crash_dump.*
+javaclasspath.txt
+javamemheap.txt
+
+# Ignore user-specific MATLAB settings
+**/resources/project/shared/*.prj
+**/.matlab*/ 
+
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter output
+.ipynb_checkpoints/
+
+# Build / distribution folders
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# --- General OS/Editor Stuff ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# --- Temporary / Intermediate Data Files ---
+*.tmp
+*.bak
+*.old
+
+# --- Optional (recommended) ---
+# NetCDF or FITS data files you don’t want in repo
+*.nc
+*.nc4
+*.fits
+*.fit
+
+# Movies/plots/figures (if large)
+*.mp4
+*.avi
+*.png
+*.jpg
+*.tif
+
+# --- Large single-run output dirs ---
+output/
+results/
+cache/
